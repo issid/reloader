@@ -1,0 +1,35 @@
+{
+    "name": "reloader",
+    "dispnamelayName": "reloader",
+    "publisher": "IssID",
+    "author": {
+        "name": "IssID"
+    },
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "repository": "https://github.com/issid/reloader",
+    "version": "0.0.1",
+    "icon": "./Icon.png",
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.reloader"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.reloader",
+                "title": "reloader: Enable/disable server"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vscode": "^1.1.34"
+    },
+    "dependencies": {
+        "ws": "^8.18.0"
+    }
+}
